@@ -48,3 +48,6 @@ obj
 .suo
 .user
 .log
+*.log
+*.suo
+*.suo
