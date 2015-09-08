@@ -1,0 +1,37 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EPi.Owin showcase with Google authentication - login</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="panel panel-primary">
+        @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+        {
+            <div class="alert alert-danger">
+                <strong>@ViewBag.ErrorMessage</strong>
+            </div>
+        }
+        <div class="panel-body">
+            <p>Welcome!</p>
+            <p>
+                @using (Html.BeginForm("ExternalLogin", "Account", new { ReturnUrl = ViewBag.ReturnUrl }))
+                {
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="btn btn-lg btn-primary" id="Google" name="provider" value="Google" title="Login with Google">Log in</button>
+                }
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
