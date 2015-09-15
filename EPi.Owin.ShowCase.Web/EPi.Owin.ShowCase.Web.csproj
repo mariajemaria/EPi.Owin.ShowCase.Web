@@ -304,13 +304,7 @@
     <Compile Include="Models\Pages\StartPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\Blocks\" />
-    <Folder Include="Models\Media\" />
-    <Folder Include="Models\Properties\" />
-    <Folder Include="Static\" />
-    <Folder Include="Views\Shared\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Views\Web.config" />
     <Content Include="Global.asax" />

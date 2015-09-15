@@ -51,3 +51,5 @@ obj
 *.log
 *.suo
 *.suo
+*.suo
+*.log

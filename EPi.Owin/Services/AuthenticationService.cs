@@ -17,7 +17,6 @@ namespace EPi.Owin.Services
 
             var context = input.OwinContext.Get<HttpContextBase>(typeof(HttpContextBase).FullName);
 
-            // session end removes the current user from online users
             var session = context.Session;
             if (session != null)
             {
